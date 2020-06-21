@@ -12,15 +12,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- Шапка сайта -->
-    <header class="border-bottom">
+    <header class="header-border">
       <div class="container header-links">
         <nav class="header-links">
-          <a href="./index.html" class="logo primery"
+          <a href="./index.html" class="logo-primery"
             ><span class="logo-web">Web</span> Studio</a
           >
           <ul class="site-nav">
@@ -111,7 +111,7 @@
                       <use href="./img/sprite-svg.svg#email-input"></use>
                     </svg>
                   </div>
-                  <div class="form-field form-field-textarea">
+                  <div class="form-field-textarea">
                     <textarea
                       name="coments"
                       id="coments"
@@ -140,7 +140,11 @@
                   <div class="submit-button-container">
                     <button type="submit">Отправить</button>
                   </div>
-                  <div class="close" data-modal-close></div>
+                  <div class="close" data-modal-close>
+                    <svg width="11px" height="11px">
+                      <use href="./img/sprite-svg.svg#close"></use>
+                    </svg>
+                  </div>
                 </div>
               </form>
             </div>
@@ -494,12 +498,12 @@
     <!-- Футер сайта -->
     <footer>
       <div class="container">
-        <div class="footer-links">
+        <div class="footer-container">
           <div>
-            <a href="./index.html" class="logo secondary marg-bott"
+            <a href="./index.html" class="logo-secondary logo-margin"
               ><span class="logo-web">Web</span> Studio</a
             >
-            <address>
+            <address class="footer-address">
               <a
                 href="https://goo.gl/maps/tPkDzDL7LACH9RPQ9"
                 target="_blank"
@@ -515,7 +519,7 @@
             </address>
           </div>
           <div>
-            <h3 class="follow">присоединяйтесь</h3>
+            <h3 class="follow-title">присоединяйтесь</h3>
             <ul class="social-networks">
               <div class="social-networks-links">
                 <li>
@@ -550,7 +554,7 @@
             </ul>
           </div>
           <div>
-            <h3 class="follow">Подпишитесь на рассылку</h3>
+            <h3 class="follow-title">Подпишитесь на рассылку</h3>
             <form class="follow-container">
               <input
                 type="email"
@@ -569,7 +573,6 @@
             </form>
           </div>
         </div>
-        <p class="developed">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
